@@ -1,0 +1,38 @@
+import java.time.*
+
+/**
+*@version 1.5 2020-11-14
+*author Rorippas
+*/
+
+public class CalendarTest
+{
+  public static void main(string[] args)
+  
+  {
+  LocalDate date = LocalDate.now();
+  int month = date.getMonthvalue();
+  int today = date.getdayOfMonth();
+  
+  date = date.minusDay(today-1); //set to start of month
+  DayOfWeek weekday = date.getDayOfWeek();
+  int value = week.getValue(); //1 = monday--7 = Sunday
+  
+  System.out.println("Mon The Wed Thu Fri Sat Sun");
+  for(int i = 1,i < value,i++)
+    system.out.print("    ");
+  while (date.getMonthValue() == mouth)
+  {
+  System.out.printf("%3d",dat.getDayOfMonth());
+  if(date.getDayOfmonth() == today)
+    system.out.print("*");
+  else
+    system.out.print("  ");
+    date = date.plusDays(1)
+    if(date.getDayOfWeek().getValue() == 1)
+      system.out.println();
+  }
+   if(date.getDayOfWeek().getValue() == 1)
+      system.out.println();
+  }
+}
