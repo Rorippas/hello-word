@@ -1,0 +1,8 @@
+Illegalformatconverslonexception: f ! Java lang Integer
+at java util. Format tersformatspecifier failconversion(Unknown Source
+at java util. Formattersformat Specifier printfloat(Unknown Source)
+at java util. Format tersformatspecifier print(Unknown Source)
+at java util. Formatter format(Unknown Source)
+at java.io Printstream format(Unknown Source)
+at java.io Printstream.printf(Unknown Source)
+at Luckydraw.main(Luckydraw, java: 27)
