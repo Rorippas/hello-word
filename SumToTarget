@@ -1,0 +1,39 @@
+/**
+*题目：长度为n的任意数组num（范围0~100整数），指定target，求出数组中满足两数之和为target的组合数量并且输出所有组合。
+*/
+
+public class SumToTarget{
+	public static void main(String[] args){
+	int n = 30;
+	int target = 8;
+	int[] num = new int[n];
+	num = getList(n);
+	int count = 0;
+	System.out.println(num);
+
+	System.out.println("=========");
+
+	//for(int i =0; i <  num.length; i++){
+	//System.out.println(num[i]);}
+	
+	for(int i = 0; i < n; i++){
+	for(int j = i+1; j < n; j++){
+	int sum = num[i] + num[j];
+	if ( sum == target)
+	{count++;
+	//System.out.println(num[i] + "+" + num[j] + "=" + target);}
+	}
+	}
+
+	System.out.println(count);
+}
+
+	public static int[] getList(int n){
+	Random sc = new Random();
+	int[] math = new int[n];
+	for (int i = 0; i < n ; i++){
+	math[i] = sc.nextInt(10);
+	}
+	return math;
+	}
+}
